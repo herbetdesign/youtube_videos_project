@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Banco">
+    <defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#F7F2E8"/><stop offset="1" stop-color="#E7E4DD"/></linearGradient><linearGradient id="window" x2="0" y2="1"><stop stop-color="#DDF2F8"/><stop offset="1" stop-color="#B8D8E4"/></linearGradient></defs>
+    <rect width="1920" height="1080" fill="#D8DDE1"/><rect width="1920" height="820" fill="url(#wall)"/><rect y="820" width="1920" height="260" fill="#B9BFC4"/>
+    <rect x="250" y="250" width="1420" height="500" fill="#E7E4DD" stroke="#9B9A95" stroke-width="14"/><path d="M180 260 L960 70 L1740 260 Z" fill="#D4D9DC" stroke="#686F75" stroke-width="16"/><g fill="#F7F2E8" stroke="#777E83" stroke-width="12"><rect x="340" y="290" width="180" height="450"/><rect x="660" y="290" width="180" height="450"/><rect x="980" y="290" width="180" height="450"/><rect x="1300" y="290" width="180" height="450"/></g><rect x="720" y="520" width="480" height="230" fill="#C7A77F" stroke="#705A47" stroke-width="12"/><text x="810" y="190" font-family="Arial" font-size="64" font-weight="bold" fill="#455866">BANCO</text>
+    <text x="75" y="1020" font-family="Arial,sans-serif" font-size="28" fill="#6B7379" opacity=".7">Banco</text>
+    </svg>

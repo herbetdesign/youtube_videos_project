@@ -1,0 +1,34 @@
+{
+  "episode_id": "episode-001",
+  "title": "7 maneiras de ganhar dinheiro pela internet",
+  "description": "Episódio demonstrativo com o personagem Herbert e a biblioteca inicial.",
+  "resolution": {"width": 1920, "height": 1080},
+  "fps": 15,
+  "audio": {"voiceover": "../output/audio/narration.wav", "music": null},
+  "scenes": [
+    {
+      "id": "scene-001", "duration_seconds": 8, "background": "office", "character": "herbert",
+      "expression": "worried", "movement": "thinking",
+      "position": {"x": 0.67, "y": 0.65, "scale": 1.05},
+      "objects": [{"id": "laptop", "x": 0.18, "y": 0.57, "width": 330, "height": 330}, {"id": "coins", "x": 0.84, "y": 0.69, "width": 170, "height": 170}],
+      "camera": "slow_zoom_in", "text_overlay": "Como começar a ganhar dinheiro?",
+      "narration": "Você não precisa começar com muito dinheiro para construir uma nova fonte de renda."
+    },
+    {
+      "id": "scene-002", "duration_seconds": 9, "background": "home-office", "character": "herbert",
+      "expression": "happy", "movement": "pointing",
+      "position": {"x": 0.56, "y": 0.66, "scale": 1.0},
+      "objects": [{"id": "smartphone", "x": 0.77, "y": 0.66, "width": 165, "height": 245}, {"id": "lightbulb", "x": 0.82, "y": 0.3, "width": 120, "height": 120}],
+      "camera": "pan_right", "text_overlay": "1. Comece com uma habilidade",
+      "narration": "A primeira ideia é vender uma habilidade que você já possui, como design, edição, suporte ou escrita."
+    },
+    {
+      "id": "scene-003", "duration_seconds": 9, "background": "charts", "character": "mentor",
+      "expression": "determined", "movement": "talking",
+      "position": {"x": 0.25, "y": 0.7, "scale": 0.93},
+      "objects": [{"id": "chart-up", "x": 0.72, "y": 0.53, "width": 380, "height": 310}],
+      "camera": "static", "text_overlay": "Construa renda com consistência",
+      "narration": "Escolha um problema real, ofereça uma solução simples e reinvista parte do que ganhar."
+    }
+  ]
+}

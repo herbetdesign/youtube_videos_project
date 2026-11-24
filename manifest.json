@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "project": "financial-animation-kit",
+  "description": "Biblioteca reutilizável de personagens, cenários, objetos e animações SVG para vídeos educativos sobre finanças, carreira e negócios.",
+  "canvas": {"width": 1920, "height": 1080, "aspect_ratio": "16:9", "default_fps": 15},
+  "style": {"name": "2D pastel hand-drawn explainer", "outline": "#282828", "palette": ["#D9E5ED", "#EEE5D4", "#D8E5D5", "#E7C8BD", "#526071", "#343434"], "consistency": "Use sempre o mesmo traço, proporções e paleta."},
+  "characters": {
+    "herbert": {"name": "Herbert — Protagonista", "path": "characters/herbert/character.svg", "viewBox": "0 0 600 720", "expressions": ["neutral", "happy", "excited", "surprised", "pondering", "worried", "sad", "doubtful", "determined", "laughing"], "movements": ["idle", "talking", "typing", "thinking", "walking", "pointing", "celebrating", "holding_phone", "holding_money", "writing"]},
+    "mentor": {"name": "Mentora", "path": "characters/mentor/character.svg", "viewBox": "0 0 600 720", "expressions": ["neutral", "happy", "excited", "surprised", "pondering", "worried", "sad", "doubtful", "determined", "laughing"], "movements": ["idle", "talking", "typing", "thinking", "walking", "pointing", "celebrating", "holding_phone", "holding_money", "writing"]},
+    "investor": {"name": "Investidor", "path": "characters/investor/character.svg", "viewBox": "0 0 600 720", "expressions": ["neutral", "happy", "excited", "surprised", "pondering", "worried", "sad", "doubtful", "determined", "laughing"], "movements": ["idle", "talking", "typing", "thinking", "walking", "pointing", "celebrating", "holding_phone", "holding_money", "writing"]},
+    "friend": {"name": "Amigo", "path": "characters/friend/character.svg", "viewBox": "0 0 600 720", "expressions": ["neutral", "happy", "excited", "surprised", "pondering", "worried", "sad", "doubtful", "determined", "laughing"], "movements": ["idle", "talking", "typing", "thinking", "walking", "pointing", "celebrating", "holding_phone", "holding_money", "writing"]},
+    "specialist": {"name": "Especialista", "path": "characters/specialist/character.svg", "viewBox": "0 0 600 720", "expressions": ["neutral", "happy", "excited", "surprised", "pondering", "worried", "sad", "doubtful", "determined", "laughing"], "movements": ["idle", "talking", "typing", "thinking", "walking", "pointing", "celebrating", "holding_phone", "holding_money", "writing"]}
+  },
+  "scenes": {"office":{"name":"Escritório","path":"scenes/office.svg"},"home-office":{"name":"Home office","path":"scenes/home-office.svg"},"study-room":{"name":"Sala de estudo","path":"scenes/study-room.svg"},"cafe":{"name":"Cafeteria","path":"scenes/cafe.svg"},"bank":{"name":"Banco","path":"scenes/bank.svg"},"supermarket":{"name":"Supermercado","path":"scenes/supermarket.svg"},"city":{"name":"Cidade","path":"scenes/city.svg"},"charts":{"name":"Gráficos e investimentos","path":"scenes/charts.svg"}},
+  "objects": {"laptop":{"path":"objects/laptop.svg","viewBox":"0 0 420 420"},"smartphone":{"path":"objects/smartphone.svg","viewBox":"0 0 420 420"},"money-stack":{"path":"objects/money-stack.svg","viewBox":"0 0 420 420"},"coins":{"path":"objects/coins.svg","viewBox":"0 0 420 420"},"chart-up":{"path":"objects/chart-up.svg","viewBox":"0 0 420 420"},"briefcase":{"path":"objects/briefcase.svg","viewBox":"0 0 420 420"},"lightbulb":{"path":"objects/lightbulb.svg","viewBox":"0 0 420 420"}},
+  "expressions": ["neutral", "happy", "excited", "surprised", "pondering", "worried", "sad", "doubtful", "determined", "laughing"],
+  "movements": ["idle", "talking", "typing", "thinking", "walking", "pointing", "celebrating", "holding_phone", "holding_money", "writing"],
+  "camera": ["static", "slow_zoom_in", "slow_zoom_out", "pan_left", "pan_right"],
+  "technologies": {"engine": ["HTML5", "CSS3", "JavaScript", "SVG"], "scene_generator": ["Python", "Ollama API opcional"], "render": ["Playwright", "FFmpeg"], "version_control": "GitHub"}
+}

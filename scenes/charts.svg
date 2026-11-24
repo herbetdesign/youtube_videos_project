@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Gráficos e investimentos">
+    <defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#F7F2E8"/><stop offset="1" stop-color="#E7E4DD"/></linearGradient><linearGradient id="window" x2="0" y2="1"><stop stop-color="#DDF2F8"/><stop offset="1" stop-color="#B8D8E4"/></linearGradient></defs>
+    <rect width="1920" height="1080" fill="#D8DDE1"/><rect width="1920" height="820" fill="url(#wall)"/><rect y="820" width="1920" height="260" fill="#B9BFC4"/>
+    <rect x="140" y="110" width="1640" height="650" rx="24" fill="#F8F7F2" stroke="#A7B0B4" stroke-width="16"/><g stroke="#D4DADD" stroke-width="5"><path d="M250 250 H1680 M250 380 H1680 M250 510 H1680 M250 640 H1680"/></g><path d="M260 680 L500 600 L720 625 L950 450 L1160 490 L1420 280 L1660 190" fill="none" stroke="#5D9A70" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/><path d="M1600 190 L1660 190 L1650 250" fill="none" stroke="#5D9A70" stroke-width="24" stroke-linecap="round"/><g fill="#E6C66A" stroke="#8B753E" stroke-width="8"><circle cx="450" cy="820" r="65"/><circle cx="600" cy="820" r="65"/><circle cx="750" cy="820" r="65"/></g>
+    <text x="75" y="1020" font-family="Arial,sans-serif" font-size="28" fill="#6B7379" opacity=".7">Gráficos e investimentos</text>
+    </svg>
