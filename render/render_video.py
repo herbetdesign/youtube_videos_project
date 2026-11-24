@@ -15,7 +15,7 @@ def main():
     ep=Path(a.episode).resolve(); data=json.loads(ep.read_text(encoding='utf-8'))
     from sys import path as syspath; syspath.insert(0,str(ROOT/'python')); from scene_generator import validate_episode
     errors=validate_episode(data)
-    if errors: raise SystemExit('JSON inválido:\\n'+'\\n'.join(errors))
+    if errors: raise SystemExit('JSON inválido:\n'+'\n'.join(errors))
     duration=sum(float(s['duration_seconds']) for s in data['scenes']); fps=max(1,min(a.fps,30)); total=round(duration*fps)
     frame_dir=ROOT/'output'/'frames'; frame_dir.mkdir(parents=True,exist_ok=True)
     for old in frame_dir.glob('frame_*.png'): old.unlink()
