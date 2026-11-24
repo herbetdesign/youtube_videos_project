@@ -20,6 +20,10 @@ playwright install chromium
 ```
 Confirme `ffmpeg -version`.
 
+## Ver o elenco
+
+Depois de atualizar o repositório, abra `docs/character-roster.html` no navegador para ver os oito avatares lado a lado.
+
 ## Validar e pré-visualizar
 
 ```powershell
