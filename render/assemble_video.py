@@ -16,6 +16,8 @@ if a.music and Path(a.music).exists():
     music_idx=2; audio_inputs.append(f'[{music_idx}:a]volume={max(0,min(a.music_volume,1))}[music]');filters.append(';'.join(audio_inputs)+';[voice][music]amix=inputs=2:duration=first:dropout_transition=2[aout]')
 else: filters.append('[1:a]apad[aout]')
 cmd+=['-filter_complex',';'.join(filters),'-map','0:v:0','-map','[aout]']
-if a.subtitles and Path(a.subtitles).exists(): cmd+=['-vf',f"subtitles={str(Path(a.subtitles).resolve()).replace('\\\\','/').replace(':','\\\\:')}"]
+if a.subtitles and Path(a.subtitles).exists():
+    subtitle_path=str(Path(a.subtitles).resolve()).replace('\\','/').replace(':','\\:')
+    cmd+=['-vf',f'subtitles={subtitle_path}']
 cmd+=['-c:v','libx264','-preset','fast','-crf','20','-pix_fmt','yuv420p','-c:a','aac','-b:a','192k','-shortest','-movflags','+faststart',a.output]
 subprocess.run(cmd,check=True);print(f'Vídeo final salvo em: {a.output}')
