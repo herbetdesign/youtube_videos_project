@@ -1,13 +1,11 @@
 {
   "idle": {
-    "description": "Leve balanço/respiração",
     "groups": [
       "head",
       "torso"
     ]
   },
   "talking": {
-    "description": "Gestos e cabeça em movimento",
     "groups": [
       "arm-left",
       "arm-right",
@@ -15,21 +13,18 @@
     ]
   },
   "typing": {
-    "description": "Braços em gesto de digitação",
     "groups": [
       "arm-left",
       "arm-right"
     ]
   },
   "thinking": {
-    "description": "Cabeça inclinada e braço próximo ao rosto",
     "groups": [
       "head",
       "arm-left"
     ]
   },
   "walking": {
-    "description": "Passos alternados",
     "groups": [
       "arm-left",
       "arm-right",
@@ -38,7 +33,6 @@
     ]
   },
   "running": {
-    "description": "Corrida",
     "groups": [
       "arm-left",
       "arm-right",
@@ -47,35 +41,32 @@
     ]
   },
   "pointing": {
-    "description": "Braço direito aponta",
     "groups": [
       "arm-right",
       "head"
     ]
   },
   "celebrating": {
-    "description": "Braços levantados",
     "groups": [
       "arm-left",
       "arm-right",
-      "legs"
+      "leg-left",
+      "leg-right"
     ]
   },
   "holding_phone": {
-    "description": "Braço esquerdo ergue celular",
     "groups": [
       "arm-left",
       "head"
     ]
   },
   "holding_money": {
-    "description": "Braço direito ergue dinheiro",
     "groups": [
-      "arm-right"
+      "arm-right",
+      "head"
     ]
   },
   "writing": {
-    "description": "Movimento de escrita",
     "groups": [
       "arm-right",
       "head"

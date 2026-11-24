@@ -1,16 +1,18 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "project": "financial-animation-kit",
   "visual_style": {
     "name": "2D Blocky Game Cartoon",
-    "description": "Avatares 2D originais com cabeças quadradas, troncos retangulares, membros articulados, contornos pretos grossos, cores vivas e cenários simples de jogo.",
-    "reference": "Linguagem visual inspirada em avatares de jogos blocky; não usar logos nem personagens oficiais.",
+    "description": "Avatares 2D originais com cabeças quadradas, troncos retangulares, membros blocados articulados, contorno preto grosso e cores vivas.",
+    "reference": "Linguagem visual de jogos de avatar blocky, sem marcas ou personagens oficiais.",
     "canvas": {
       "width": 1920,
       "height": 1080,
       "aspect_ratio": "16:9",
       "default_fps": 15
     },
+    "outline": "#20252B",
+    "outline_width": 10,
     "palette": [
       "#5DA9F6",
       "#7FD34E",
@@ -20,9 +22,7 @@
       "#F27B2D",
       "#743A9A",
       "#E64B58"
-    ],
-    "outline": "#20252B",
-    "outline_width": 10
+    ]
   },
   "characters": {
     "herbert": {
@@ -236,114 +236,114 @@
   },
   "scenes": {
     "office": {
-      "name": "Escritório",
+      "name": "office",
       "path": "scenes/office.svg",
       "viewBox": "0 0 1920 1080"
     },
     "home-office": {
-      "name": "Home Office",
+      "name": "home-office",
       "path": "scenes/home-office.svg",
       "viewBox": "0 0 1920 1080"
     },
     "bank": {
-      "name": "Banco",
+      "name": "bank",
       "path": "scenes/bank.svg",
       "viewBox": "0 0 1920 1080"
     },
     "supermarket": {
-      "name": "Supermercado",
+      "name": "supermarket",
       "path": "scenes/supermarket.svg",
       "viewBox": "0 0 1920 1080"
     },
     "city": {
-      "name": "Cidade",
+      "name": "city",
       "path": "scenes/city.svg",
       "viewBox": "0 0 1920 1080"
     },
     "shop": {
-      "name": "Loja / Brique",
+      "name": "shop",
       "path": "scenes/shop.svg",
       "viewBox": "0 0 1920 1080"
     },
     "studio": {
-      "name": "Estúdio / Gravação",
+      "name": "studio",
       "path": "scenes/studio.svg",
       "viewBox": "0 0 1920 1080"
     },
     "beach": {
-      "name": "Praia / Lazer",
+      "name": "beach",
       "path": "scenes/beach.svg",
       "viewBox": "0 0 1920 1080"
     },
     "cafe": {
-      "name": "Cafeteria",
+      "name": "cafe",
       "path": "scenes/cafe.svg",
       "viewBox": "0 0 1920 1080"
     },
     "charts": {
-      "name": "Gráficos / Investimentos",
+      "name": "charts",
       "path": "scenes/charts.svg",
       "viewBox": "0 0 1920 1080"
     }
   },
   "objects": {
     "laptop": {
-      "name": "Notebook",
+      "name": "laptop",
       "path": "objects/laptop.svg",
       "viewBox": "0 0 420 420"
     },
     "smartphone": {
-      "name": "Celular",
+      "name": "smartphone",
       "path": "objects/smartphone.svg",
       "viewBox": "0 0 420 420"
     },
     "money-stack": {
-      "name": "Dinheiro",
+      "name": "money-stack",
       "path": "objects/money-stack.svg",
       "viewBox": "0 0 420 420"
     },
     "coins": {
-      "name": "Moedas",
+      "name": "coins",
       "path": "objects/coins.svg",
       "viewBox": "0 0 420 420"
     },
     "chart-up": {
-      "name": "Gráfico",
+      "name": "chart-up",
       "path": "objects/chart-up.svg",
       "viewBox": "0 0 420 420"
     },
     "briefcase": {
-      "name": "Maleta",
+      "name": "briefcase",
       "path": "objects/briefcase.svg",
       "viewBox": "0 0 420 420"
     },
     "lightbulb": {
-      "name": "Ideia",
+      "name": "lightbulb",
       "path": "objects/lightbulb.svg",
       "viewBox": "0 0 420 420"
     },
     "piggy-bank": {
-      "name": "Cofrinho",
+      "name": "piggy-bank",
       "path": "objects/piggy-bank.svg",
       "viewBox": "0 0 420 420"
     },
     "banknote": {
-      "name": "Nota de dinheiro",
+      "name": "banknote",
       "path": "objects/banknote.svg",
       "viewBox": "0 0 420 420"
     },
     "calendar": {
-      "name": "Calendário",
+      "name": "calendar",
       "path": "objects/calendar.svg",
       "viewBox": "0 0 420 420"
     },
     "target": {
-      "name": "Meta",
+      "name": "target",
       "path": "objects/target.svg",
       "viewBox": "0 0 420 420"
     },
     "shopping-cart": {
-      "name": "Carrinho",
+      "name": "shopping-cart",
       "path": "objects/shopping-cart.svg",
       "viewBox": "0 0 420 420"
     }
@@ -352,59 +352,105 @@
     "casual-blue": {
       "name": "Casual azul",
       "path": "outfits/casual-blue.svg",
-      "viewBox": "0 0 400 560"
+      "parts": [
+        "torso",
+        "arm-left",
+        "arm-right",
+        "leg-left",
+        "leg-right"
+      ]
     },
     "business-suit": {
       "name": "Terno executivo",
       "path": "outfits/business-suit.svg",
-      "viewBox": "0 0 400 560"
+      "parts": [
+        "torso",
+        "arm-left",
+        "arm-right",
+        "leg-left",
+        "leg-right"
+      ]
     },
     "purple-mentor": {
       "name": "Blazer roxo",
       "path": "outfits/purple-mentor.svg",
-      "viewBox": "0 0 400 560"
+      "parts": [
+        "torso",
+        "arm-left",
+        "arm-right",
+        "leg-left",
+        "leg-right"
+      ]
     },
     "yellow-hoodie": {
       "name": "Moletom amarelo",
       "path": "outfits/yellow-hoodie.svg",
-      "viewBox": "0 0 400 560"
+      "parts": [
+        "torso",
+        "arm-left",
+        "arm-right",
+        "leg-left",
+        "leg-right"
+      ]
     },
     "red-creator": {
       "name": "Jaqueta vermelha",
       "path": "outfits/red-creator.svg",
-      "viewBox": "0 0 400 560"
+      "parts": [
+        "torso",
+        "arm-left",
+        "arm-right",
+        "leg-left",
+        "leg-right"
+      ]
     },
     "orange-workwear": {
       "name": "Colete de trabalho",
       "path": "outfits/orange-workwear.svg",
-      "viewBox": "0 0 400 560"
+      "parts": [
+        "torso",
+        "arm-left",
+        "arm-right",
+        "leg-left",
+        "leg-right"
+      ]
     }
   },
   "accessories": {
     "glasses": {
       "name": "Óculos",
       "path": "accessories/glasses.svg",
-      "viewBox": "0 0 400 560"
+      "parts": [
+        "head"
+      ]
     },
     "blue-cap": {
       "name": "Boné azul",
       "path": "accessories/blue-cap.svg",
-      "viewBox": "0 0 400 560"
+      "parts": [
+        "head"
+      ]
     },
     "yellow-hardhat": {
       "name": "Capacete amarelo",
       "path": "accessories/yellow-hardhat.svg",
-      "viewBox": "0 0 400 560"
+      "parts": [
+        "head"
+      ]
     },
     "headset": {
       "name": "Headset",
       "path": "accessories/headset.svg",
-      "viewBox": "0 0 400 560"
+      "parts": [
+        "head"
+      ]
     },
     "tie-red": {
       "name": "Gravata vermelha",
       "path": "accessories/tie-red.svg",
-      "viewBox": "0 0 400 560"
+      "parts": [
+        "torso"
+      ]
     }
   },
   "expressions": [

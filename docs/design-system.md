@@ -1,16 +1,7 @@
 # Design System — 2D Blocky Game Cartoon
 
-Avatares 2D originais com cabeça quadrada arredondada, tronco retangular, braços e pernas em blocos articulados, contornos pretos grossos e cores vivas. Linguagem de arte inspirada em jogos de avatar, sem usar logos ou personagens oficiais.
+Avatares originais 2D com cabeças quadradas, troncos retangulares, braços e pernas em blocos articulados, contornos pretos grossos e cores vivas. Estética inspirada em jogos de avatares, sem copiar logos ou personagens oficiais.
 
-| ID | Personagem | Aparência |
-|---|---|---|
-| herbert | Herbert | Cabelo laranja, roupa azul-marinho, gravata azul |
-| mentor | Mentora | Cabelo castanho longo, óculos, blazer roxo |
-| investor | Investidor | Cabelo escuro, barba, terno |
-| friend | Amigo | Boné azul, moletom amarelo |
-| specialist | Especialista | Cabelo grisalho, óculos, camisa clara e gravata vermelha |
-| entrepreneur | Empreendedora | Cabelo preto preso, jaqueta vermelha |
-| tech-ai | Tech/IA | Cabelo escuro, headset, camisa azul |
-| reseller | Briqueiro | Capacete amarelo, roupa azul e colete laranja |
+Elenco: Herbert (cabelo laranja/roupa azul), Mentora (cabelo castanho/óculos/blazer roxo), Investidor (barba/terno), Amigo (boné/moletom amarelo), Especialista (cabelo grisalho/óculos), Empreendedora (cabelo preto/jaqueta vermelha), Tech/IA (headset/camisa azul) e Briqueiro (capacete/colete laranja).
 
-Todos os personagens têm grupos SVG `head`, `torso`, `arm-left`, `arm-right`, `leg-left` e `leg-right`. O motor aplica rotações para movimentos básicos. O manifesto registra cenas, objetos, roupas, acessórios, expressões e movimentos.
+Rig SVG viewBox 400×560; grupos: `head`, `torso`, `arm-left`, `arm-right`, `leg-left`, `leg-right`. Roupas e acessórios usam `data-part` e são anexados dentro desses grupos.

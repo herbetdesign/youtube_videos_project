@@ -1,9 +1,3 @@
 # Especialista — Especialista
 
-Avatar original no estilo 2D Blocky Game Cartoon.
-
-- ID: `specialist`
-- SVG: `character.svg`
-- ViewBox: `0 0 400 560`
-- Grupos articulados: `head`, `torso`, `arm-left`, `arm-right`, `leg-left`, `leg-right`
-- Expressões: neutral, happy, excited, surprised, pondering, worried, sad, angry, confident, idea
+Avatar original 2D Blocky. SVG com grupos articulados: head, torso, arm-left, arm-right, leg-left e leg-right. Dez expressões faciais incluídas.

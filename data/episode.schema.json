@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Financial Animation Episode — 2D Blocky",
+  "title": "2D Blocky Episode",
   "type": "object",
   "required": [
     "episode_id",
@@ -124,9 +124,6 @@
                 },
                 "height": {
                   "type": "number"
-                },
-                "rotate": {
-                  "type": "number"
                 }
               }
             }
@@ -143,6 +140,5 @@
         }
       }
     }
-  },
-  "additionalProperties": true
+  }
 }
