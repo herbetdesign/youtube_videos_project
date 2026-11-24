@@ -236,114 +236,114 @@
   },
   "scenes": {
     "office": {
-      "name": "office",
+      "name": "Escritório",
       "path": "scenes/office.svg",
       "viewBox": "0 0 1920 1080"
     },
     "home-office": {
-      "name": "home-office",
+      "name": "Home office",
       "path": "scenes/home-office.svg",
       "viewBox": "0 0 1920 1080"
     },
     "bank": {
-      "name": "bank",
+      "name": "Banco",
       "path": "scenes/bank.svg",
       "viewBox": "0 0 1920 1080"
     },
     "supermarket": {
-      "name": "supermarket",
+      "name": "Supermercado",
       "path": "scenes/supermarket.svg",
       "viewBox": "0 0 1920 1080"
     },
     "city": {
-      "name": "city",
+      "name": "Cidade",
       "path": "scenes/city.svg",
       "viewBox": "0 0 1920 1080"
     },
     "shop": {
-      "name": "shop",
+      "name": "Loja / Brique",
       "path": "scenes/shop.svg",
       "viewBox": "0 0 1920 1080"
     },
     "studio": {
-      "name": "studio",
+      "name": "Estúdio de gravação",
       "path": "scenes/studio.svg",
       "viewBox": "0 0 1920 1080"
     },
     "beach": {
-      "name": "beach",
+      "name": "Praia",
       "path": "scenes/beach.svg",
       "viewBox": "0 0 1920 1080"
     },
     "cafe": {
-      "name": "cafe",
+      "name": "Cafeteria",
       "path": "scenes/cafe.svg",
       "viewBox": "0 0 1920 1080"
     },
     "charts": {
-      "name": "charts",
+      "name": "Gráficos e investimentos",
       "path": "scenes/charts.svg",
       "viewBox": "0 0 1920 1080"
     }
   },
   "objects": {
     "laptop": {
-      "name": "laptop",
+      "name": "Notebook",
       "path": "objects/laptop.svg",
       "viewBox": "0 0 420 420"
     },
     "smartphone": {
-      "name": "smartphone",
+      "name": "Celular",
       "path": "objects/smartphone.svg",
       "viewBox": "0 0 420 420"
     },
     "money-stack": {
-      "name": "money-stack",
+      "name": "Pilha de dinheiro",
       "path": "objects/money-stack.svg",
       "viewBox": "0 0 420 420"
     },
     "coins": {
-      "name": "coins",
+      "name": "Moedas",
       "path": "objects/coins.svg",
       "viewBox": "0 0 420 420"
     },
     "chart-up": {
-      "name": "chart-up",
+      "name": "Gráfico de crescimento",
       "path": "objects/chart-up.svg",
       "viewBox": "0 0 420 420"
     },
     "briefcase": {
-      "name": "briefcase",
+      "name": "Maleta",
       "path": "objects/briefcase.svg",
       "viewBox": "0 0 420 420"
     },
     "lightbulb": {
-      "name": "lightbulb",
+      "name": "Lâmpada / ideia",
       "path": "objects/lightbulb.svg",
       "viewBox": "0 0 420 420"
     },
     "piggy-bank": {
-      "name": "piggy-bank",
+      "name": "Cofrinho",
       "path": "objects/piggy-bank.svg",
       "viewBox": "0 0 420 420"
     },
     "banknote": {
-      "name": "banknote",
+      "name": "Nota de dinheiro",
       "path": "objects/banknote.svg",
       "viewBox": "0 0 420 420"
     },
     "calendar": {
-      "name": "calendar",
+      "name": "Calendário",
       "path": "objects/calendar.svg",
       "viewBox": "0 0 420 420"
     },
     "target": {
-      "name": "target",
+      "name": "Meta",
       "path": "objects/target.svg",
       "viewBox": "0 0 420 420"
     },
     "shopping-cart": {
-      "name": "shopping-cart",
+      "name": "Carrinho de compras",
       "path": "objects/shopping-cart.svg",
       "viewBox": "0 0 420 420"
     }
