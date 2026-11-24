@@ -1,7 +1,3 @@
-# Prompt para roteiro e storyboard no ChatGPT
+# Prompt para ChatGPT
 
-Use o seguinte pedido como ponto de partida:
-
-> Crie um roteiro para um vídeo de YouTube sobre **[TEMA]**, com duração aproximada de **[DURAÇÃO]**. Entregue roteiro de narração e storyboard cena a cena para o Financial Animation Kit. Mantenha estilo 2D cartoon pastel, contorno grafite e formato 16:9. Use somente os personagens, cenários, objetos, expressões, movimentos e câmeras listados no `manifest.json` fornecido. Não invente IDs. Para cada cena, informe: ID, duração, cenário, personagem, expressão, movimento, coordenada aproximada do personagem (x/y entre 0 e 1), objetos com coordenadas e dimensões, movimento de câmera, texto na tela e narração. Varie enquadramentos e cenas; evite trocar de fundo sem motivo narrativo. Depois, entregue também o JSON de episódio seguindo `data/episode.schema.json`.
-
-Para economizar tokens, forneça ao ChatGPT apenas o `manifest.json`, o schema e a descrição do episódio. Não é necessário enviar o conteúdo integral de cada SVG, a menos que seja solicitado um ajuste visual daquele asset.
+Crie roteiro para um vídeo financeiro sobre **[TEMA]**, duração **[X]**. Entregue narração e storyboard cena a cena no estilo 2D Blocky Game Cartoon: avatares com cabeça quadrada, tronco retangular, membros articulados, contornos pretos e cores vivas. Use somente IDs de `manifest.json`. Para cada cena, informe duração, cenário, personagem, expressão, movimento, posição, roupa opcional, acessórios, objetos, câmera, texto na tela e narração. Entregue JSON conforme `data/episode.schema.json`, 1920x1080. Não invente IDs nem redesenhe personagens.

@@ -1,30 +1,16 @@
-# Sistema visual
+# Design System — 2D Blocky Game Cartoon
 
-## Direção de arte
+Avatares 2D originais com cabeça quadrada arredondada, tronco retangular, braços e pernas em blocos articulados, contornos pretos grossos e cores vivas. Linguagem de arte inspirada em jogos de avatar, sem usar logos ou personagens oficiais.
 
-- Animação 2D educativa, com aparência de ilustração desenhada à mão.
-- Contorno grafite `#282828`, espessura visual consistente e formas arredondadas.
-- Paleta pastel: cinza azulado, bege, verde suave, coral e azul-marinho.
-- Personagens com cabeças expressivas, olhos legíveis e silhuetas simples.
-- Cenários cotidianos: escritório, casa, banco, supermercado, cafeteria, cidade e gráficos.
-- Composição horizontal 16:9 em 1920×1080.
-
-## Elenco inicial
-
-| ID | Papel | Identidade |
+| ID | Personagem | Aparência |
 |---|---|---|
-| `herbert` | Protagonista | Cabelo branco, camiseta cinza, curioso e acessível. |
-| `mentor` | Mentora | Cabelo castanho, óculos, blazer roxo. |
-| `investor` | Investidor | Barba curta, cabelo escuro, roupa azul-marinho. |
-| `friend` | Amigo | Boné azul, moletom bege, público iniciante. |
-| `specialist` | Especialista | Cabelo grisalho, óculos e terno. |
+| herbert | Herbert | Cabelo laranja, roupa azul-marinho, gravata azul |
+| mentor | Mentora | Cabelo castanho longo, óculos, blazer roxo |
+| investor | Investidor | Cabelo escuro, barba, terno |
+| friend | Amigo | Boné azul, moletom amarelo |
+| specialist | Especialista | Cabelo grisalho, óculos, camisa clara e gravata vermelha |
+| entrepreneur | Empreendedora | Cabelo preto preso, jaqueta vermelha |
+| tech-ai | Tech/IA | Cabelo escuro, headset, camisa azul |
+| reseller | Briqueiro | Capacete amarelo, roupa azul e colete laranja |
 
-Cada SVG mantém o mesmo `viewBox` e um grupo `#character-rig`. Dez expressões ficam embutidas no SVG e são ativadas pelo motor com `data-expression`.
-
-## Regras de consistência
-
-1. Não altere o formato do rosto nem a escala da cabeça entre expressões.
-2. Mantenha o contorno grafite e a paleta definida.
-3. Dê preferência a novos assets reutilizáveis em vez de duplicar desenhos dentro de episódios.
-4. Novos recursos devem receber IDs curtos em kebab-case e ser registrados em `manifest.json`.
-5. Evite texto rasterizado dentro das ilustrações; use a camada de texto do motor para facilitar tradução.
+Todos os personagens têm grupos SVG `head`, `torso`, `arm-left`, `arm-right`, `leg-left` e `leg-right`. O motor aplica rotações para movimentos básicos. O manifesto registra cenas, objetos, roupas, acessórios, expressões e movimentos.

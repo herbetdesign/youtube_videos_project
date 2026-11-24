@@ -1,33 +1,110 @@
 {
-  "episode_id": "episode-001",
-  "title": "7 maneiras de ganhar dinheiro pela internet",
-  "description": "Episódio demonstrativo com o personagem Herbert e a biblioteca inicial.",
-  "resolution": {"width": 1920, "height": 1080},
+  "episode_id": "episode-001-blocky",
+  "title": "Como começar a ganhar dinheiro",
+  "description": "Teste visual do novo estilo 2D blocky com avatares articulados.",
+  "resolution": {
+    "width": 1920,
+    "height": 1080
+  },
   "fps": 15,
-  "audio": {"voiceover": "../output/audio/narration.wav", "music": null},
+  "audio": {
+    "voiceover": "output/audio/narration.mp3",
+    "music": null
+  },
   "scenes": [
     {
-      "id": "scene-001", "duration_seconds": 8, "background": "office", "character": "herbert",
-      "expression": "worried", "movement": "thinking",
-      "position": {"x": 0.67, "y": 0.65, "scale": 1.05},
-      "objects": [{"id": "laptop", "x": 0.18, "y": 0.57, "width": 330, "height": 330}, {"id": "coins", "x": 0.84, "y": 0.69, "width": 170, "height": 170}],
-      "camera": "slow_zoom_in", "text_overlay": "Como começar a ganhar dinheiro?",
+      "id": "scene-001",
+      "duration_seconds": 8,
+      "background": "office",
+      "character": "herbert",
+      "expression": "worried",
+      "movement": "thinking",
+      "position": {
+        "x": 0.6,
+        "y": 0.91,
+        "scale": 1
+      },
+      "objects": [
+        {
+          "id": "laptop",
+          "x": 0.23,
+          "y": 0.7,
+          "width": 300,
+          "height": 300
+        },
+        {
+          "id": "coins",
+          "x": 0.82,
+          "y": 0.78,
+          "width": 155,
+          "height": 155
+        }
+      ],
+      "camera": "slow_zoom_in",
+      "text_overlay": "COMO COMEÇAR A GANHAR DINHEIRO?",
       "narration": "Você não precisa começar com muito dinheiro para construir uma nova fonte de renda."
     },
     {
-      "id": "scene-002", "duration_seconds": 9, "background": "home-office", "character": "herbert",
-      "expression": "happy", "movement": "pointing",
-      "position": {"x": 0.56, "y": 0.66, "scale": 1.0},
-      "objects": [{"id": "smartphone", "x": 0.77, "y": 0.66, "width": 165, "height": 245}, {"id": "lightbulb", "x": 0.82, "y": 0.3, "width": 120, "height": 120}],
-      "camera": "pan_right", "text_overlay": "1. Comece com uma habilidade",
+      "id": "scene-002",
+      "duration_seconds": 9,
+      "background": "home-office",
+      "character": "entrepreneur",
+      "expression": "happy",
+      "movement": "pointing",
+      "position": {
+        "x": 0.52,
+        "y": 0.91,
+        "scale": 1.05
+      },
+      "outfit": "red-creator",
+      "objects": [
+        {
+          "id": "smartphone",
+          "x": 0.78,
+          "y": 0.7,
+          "width": 130,
+          "height": 245
+        },
+        {
+          "id": "lightbulb",
+          "x": 0.83,
+          "y": 0.32,
+          "width": 140,
+          "height": 140
+        }
+      ],
+      "camera": "pan_right",
+      "text_overlay": "1. VENDA UMA HABILIDADE",
       "narration": "A primeira ideia é vender uma habilidade que você já possui, como design, edição, suporte ou escrita."
     },
     {
-      "id": "scene-003", "duration_seconds": 9, "background": "charts", "character": "mentor",
-      "expression": "determined", "movement": "talking",
-      "position": {"x": 0.25, "y": 0.7, "scale": 0.93},
-      "objects": [{"id": "chart-up", "x": 0.72, "y": 0.53, "width": 380, "height": 310}],
-      "camera": "static", "text_overlay": "Construa renda com consistência",
+      "id": "scene-003",
+      "duration_seconds": 9,
+      "background": "charts",
+      "character": "investor",
+      "expression": "confident",
+      "movement": "talking",
+      "position": {
+        "x": 0.27,
+        "y": 0.91,
+        "scale": 1.02
+      },
+      "outfit": "business-suit",
+      "accessories": [
+        "tie-red",
+        "glasses"
+      ],
+      "objects": [
+        {
+          "id": "chart-up",
+          "x": 0.74,
+          "y": 0.55,
+          "width": 390,
+          "height": 350
+        }
+      ],
+      "camera": "static",
+      "text_overlay": "CONSTRUA RENDA COM CONSISTÊNCIA",
       "narration": "Escolha um problema real, ofereça uma solução simples e reinvista parte do que ganhar."
     }
   ]

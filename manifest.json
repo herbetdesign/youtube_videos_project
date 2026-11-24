@@ -1,20 +1,442 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "project": "financial-animation-kit",
-  "description": "Biblioteca reutilizável de personagens, cenários, objetos e animações SVG para vídeos educativos sobre finanças, carreira e negócios.",
-  "canvas": {"width": 1920, "height": 1080, "aspect_ratio": "16:9", "default_fps": 15},
-  "style": {"name": "2D pastel hand-drawn explainer", "outline": "#282828", "palette": ["#D9E5ED", "#EEE5D4", "#D8E5D5", "#E7C8BD", "#526071", "#343434"], "consistency": "Use sempre o mesmo traço, proporções e paleta."},
-  "characters": {
-    "herbert": {"name": "Herbert — Protagonista", "path": "characters/herbert/character.svg", "viewBox": "0 0 600 720", "expressions": ["neutral", "happy", "excited", "surprised", "pondering", "worried", "sad", "doubtful", "determined", "laughing"], "movements": ["idle", "talking", "typing", "thinking", "walking", "pointing", "celebrating", "holding_phone", "holding_money", "writing"]},
-    "mentor": {"name": "Mentora", "path": "characters/mentor/character.svg", "viewBox": "0 0 600 720", "expressions": ["neutral", "happy", "excited", "surprised", "pondering", "worried", "sad", "doubtful", "determined", "laughing"], "movements": ["idle", "talking", "typing", "thinking", "walking", "pointing", "celebrating", "holding_phone", "holding_money", "writing"]},
-    "investor": {"name": "Investidor", "path": "characters/investor/character.svg", "viewBox": "0 0 600 720", "expressions": ["neutral", "happy", "excited", "surprised", "pondering", "worried", "sad", "doubtful", "determined", "laughing"], "movements": ["idle", "talking", "typing", "thinking", "walking", "pointing", "celebrating", "holding_phone", "holding_money", "writing"]},
-    "friend": {"name": "Amigo", "path": "characters/friend/character.svg", "viewBox": "0 0 600 720", "expressions": ["neutral", "happy", "excited", "surprised", "pondering", "worried", "sad", "doubtful", "determined", "laughing"], "movements": ["idle", "talking", "typing", "thinking", "walking", "pointing", "celebrating", "holding_phone", "holding_money", "writing"]},
-    "specialist": {"name": "Especialista", "path": "characters/specialist/character.svg", "viewBox": "0 0 600 720", "expressions": ["neutral", "happy", "excited", "surprised", "pondering", "worried", "sad", "doubtful", "determined", "laughing"], "movements": ["idle", "talking", "typing", "thinking", "walking", "pointing", "celebrating", "holding_phone", "holding_money", "writing"]}
+  "visual_style": {
+    "name": "2D Blocky Game Cartoon",
+    "description": "Avatares 2D originais com cabeças quadradas, troncos retangulares, membros articulados, contornos pretos grossos, cores vivas e cenários simples de jogo.",
+    "reference": "Linguagem visual inspirada em avatares de jogos blocky; não usar logos nem personagens oficiais.",
+    "canvas": {
+      "width": 1920,
+      "height": 1080,
+      "aspect_ratio": "16:9",
+      "default_fps": 15
+    },
+    "palette": [
+      "#5DA9F6",
+      "#7FD34E",
+      "#F5C928",
+      "#F4F4F0",
+      "#1D2D46",
+      "#F27B2D",
+      "#743A9A",
+      "#E64B58"
+    ],
+    "outline": "#20252B",
+    "outline_width": 10
   },
-  "scenes": {"office":{"name":"Escritório","path":"scenes/office.svg"},"home-office":{"name":"Home office","path":"scenes/home-office.svg"},"study-room":{"name":"Sala de estudo","path":"scenes/study-room.svg"},"cafe":{"name":"Cafeteria","path":"scenes/cafe.svg"},"bank":{"name":"Banco","path":"scenes/bank.svg"},"supermarket":{"name":"Supermercado","path":"scenes/supermarket.svg"},"city":{"name":"Cidade","path":"scenes/city.svg"},"charts":{"name":"Gráficos e investimentos","path":"scenes/charts.svg"}},
-  "objects": {"laptop":{"path":"objects/laptop.svg","viewBox":"0 0 420 420"},"smartphone":{"path":"objects/smartphone.svg","viewBox":"0 0 420 420"},"money-stack":{"path":"objects/money-stack.svg","viewBox":"0 0 420 420"},"coins":{"path":"objects/coins.svg","viewBox":"0 0 420 420"},"chart-up":{"path":"objects/chart-up.svg","viewBox":"0 0 420 420"},"briefcase":{"path":"objects/briefcase.svg","viewBox":"0 0 420 420"},"lightbulb":{"path":"objects/lightbulb.svg","viewBox":"0 0 420 420"}},
-  "expressions": ["neutral", "happy", "excited", "surprised", "pondering", "worried", "sad", "doubtful", "determined", "laughing"],
-  "movements": ["idle", "talking", "typing", "thinking", "walking", "pointing", "celebrating", "holding_phone", "holding_money", "writing"],
-  "camera": ["static", "slow_zoom_in", "slow_zoom_out", "pan_left", "pan_right"],
-  "technologies": {"engine": ["HTML5", "CSS3", "JavaScript", "SVG"], "scene_generator": ["Python", "Ollama API opcional"], "render": ["Playwright", "FFmpeg"], "version_control": "GitHub"}
+  "characters": {
+    "herbert": {
+      "name": "Herbert",
+      "role": "Protagonista",
+      "path": "characters/herbert/character.svg",
+      "viewBox": "0 0 400 560",
+      "parts": [
+        "head",
+        "torso",
+        "arm-left",
+        "arm-right",
+        "leg-left",
+        "leg-right"
+      ],
+      "expressions": [
+        "neutral",
+        "happy",
+        "excited",
+        "surprised",
+        "pondering",
+        "worried",
+        "sad",
+        "angry",
+        "confident",
+        "idea"
+      ]
+    },
+    "mentor": {
+      "name": "Mentora",
+      "role": "Mentora financeira",
+      "path": "characters/mentor/character.svg",
+      "viewBox": "0 0 400 560",
+      "parts": [
+        "head",
+        "torso",
+        "arm-left",
+        "arm-right",
+        "leg-left",
+        "leg-right"
+      ],
+      "expressions": [
+        "neutral",
+        "happy",
+        "excited",
+        "surprised",
+        "pondering",
+        "worried",
+        "sad",
+        "angry",
+        "confident",
+        "idea"
+      ]
+    },
+    "investor": {
+      "name": "Investidor",
+      "role": "Investidor",
+      "path": "characters/investor/character.svg",
+      "viewBox": "0 0 400 560",
+      "parts": [
+        "head",
+        "torso",
+        "arm-left",
+        "arm-right",
+        "leg-left",
+        "leg-right"
+      ],
+      "expressions": [
+        "neutral",
+        "happy",
+        "excited",
+        "surprised",
+        "pondering",
+        "worried",
+        "sad",
+        "angry",
+        "confident",
+        "idea"
+      ]
+    },
+    "friend": {
+      "name": "Amigo",
+      "role": "Amigo iniciante",
+      "path": "characters/friend/character.svg",
+      "viewBox": "0 0 400 560",
+      "parts": [
+        "head",
+        "torso",
+        "arm-left",
+        "arm-right",
+        "leg-left",
+        "leg-right"
+      ],
+      "expressions": [
+        "neutral",
+        "happy",
+        "excited",
+        "surprised",
+        "pondering",
+        "worried",
+        "sad",
+        "angry",
+        "confident",
+        "idea"
+      ]
+    },
+    "specialist": {
+      "name": "Especialista",
+      "role": "Especialista",
+      "path": "characters/specialist/character.svg",
+      "viewBox": "0 0 400 560",
+      "parts": [
+        "head",
+        "torso",
+        "arm-left",
+        "arm-right",
+        "leg-left",
+        "leg-right"
+      ],
+      "expressions": [
+        "neutral",
+        "happy",
+        "excited",
+        "surprised",
+        "pondering",
+        "worried",
+        "sad",
+        "angry",
+        "confident",
+        "idea"
+      ]
+    },
+    "entrepreneur": {
+      "name": "Empreendedora",
+      "role": "Empreendedora",
+      "path": "characters/entrepreneur/character.svg",
+      "viewBox": "0 0 400 560",
+      "parts": [
+        "head",
+        "torso",
+        "arm-left",
+        "arm-right",
+        "leg-left",
+        "leg-right"
+      ],
+      "expressions": [
+        "neutral",
+        "happy",
+        "excited",
+        "surprised",
+        "pondering",
+        "worried",
+        "sad",
+        "angry",
+        "confident",
+        "idea"
+      ]
+    },
+    "tech-ai": {
+      "name": "Tech/IA",
+      "role": "Tecnologia e IA",
+      "path": "characters/tech-ai/character.svg",
+      "viewBox": "0 0 400 560",
+      "parts": [
+        "head",
+        "torso",
+        "arm-left",
+        "arm-right",
+        "leg-left",
+        "leg-right"
+      ],
+      "expressions": [
+        "neutral",
+        "happy",
+        "excited",
+        "surprised",
+        "pondering",
+        "worried",
+        "sad",
+        "angry",
+        "confident",
+        "idea"
+      ]
+    },
+    "reseller": {
+      "name": "Briqueiro",
+      "role": "Compra e revenda",
+      "path": "characters/reseller/character.svg",
+      "viewBox": "0 0 400 560",
+      "parts": [
+        "head",
+        "torso",
+        "arm-left",
+        "arm-right",
+        "leg-left",
+        "leg-right"
+      ],
+      "expressions": [
+        "neutral",
+        "happy",
+        "excited",
+        "surprised",
+        "pondering",
+        "worried",
+        "sad",
+        "angry",
+        "confident",
+        "idea"
+      ]
+    }
+  },
+  "scenes": {
+    "office": {
+      "name": "Escritório",
+      "path": "scenes/office.svg",
+      "viewBox": "0 0 1920 1080"
+    },
+    "home-office": {
+      "name": "Home Office",
+      "path": "scenes/home-office.svg",
+      "viewBox": "0 0 1920 1080"
+    },
+    "bank": {
+      "name": "Banco",
+      "path": "scenes/bank.svg",
+      "viewBox": "0 0 1920 1080"
+    },
+    "supermarket": {
+      "name": "Supermercado",
+      "path": "scenes/supermarket.svg",
+      "viewBox": "0 0 1920 1080"
+    },
+    "city": {
+      "name": "Cidade",
+      "path": "scenes/city.svg",
+      "viewBox": "0 0 1920 1080"
+    },
+    "shop": {
+      "name": "Loja / Brique",
+      "path": "scenes/shop.svg",
+      "viewBox": "0 0 1920 1080"
+    },
+    "studio": {
+      "name": "Estúdio / Gravação",
+      "path": "scenes/studio.svg",
+      "viewBox": "0 0 1920 1080"
+    },
+    "beach": {
+      "name": "Praia / Lazer",
+      "path": "scenes/beach.svg",
+      "viewBox": "0 0 1920 1080"
+    },
+    "cafe": {
+      "name": "Cafeteria",
+      "path": "scenes/cafe.svg",
+      "viewBox": "0 0 1920 1080"
+    },
+    "charts": {
+      "name": "Gráficos / Investimentos",
+      "path": "scenes/charts.svg",
+      "viewBox": "0 0 1920 1080"
+    }
+  },
+  "objects": {
+    "laptop": {
+      "name": "Notebook",
+      "path": "objects/laptop.svg",
+      "viewBox": "0 0 420 420"
+    },
+    "smartphone": {
+      "name": "Celular",
+      "path": "objects/smartphone.svg",
+      "viewBox": "0 0 420 420"
+    },
+    "money-stack": {
+      "name": "Dinheiro",
+      "path": "objects/money-stack.svg",
+      "viewBox": "0 0 420 420"
+    },
+    "coins": {
+      "name": "Moedas",
+      "path": "objects/coins.svg",
+      "viewBox": "0 0 420 420"
+    },
+    "chart-up": {
+      "name": "Gráfico",
+      "path": "objects/chart-up.svg",
+      "viewBox": "0 0 420 420"
+    },
+    "briefcase": {
+      "name": "Maleta",
+      "path": "objects/briefcase.svg",
+      "viewBox": "0 0 420 420"
+    },
+    "lightbulb": {
+      "name": "Ideia",
+      "path": "objects/lightbulb.svg",
+      "viewBox": "0 0 420 420"
+    },
+    "piggy-bank": {
+      "name": "Cofrinho",
+      "path": "objects/piggy-bank.svg",
+      "viewBox": "0 0 420 420"
+    },
+    "banknote": {
+      "name": "Nota de dinheiro",
+      "path": "objects/banknote.svg",
+      "viewBox": "0 0 420 420"
+    },
+    "calendar": {
+      "name": "Calendário",
+      "path": "objects/calendar.svg",
+      "viewBox": "0 0 420 420"
+    },
+    "target": {
+      "name": "Meta",
+      "path": "objects/target.svg",
+      "viewBox": "0 0 420 420"
+    },
+    "shopping-cart": {
+      "name": "Carrinho",
+      "path": "objects/shopping-cart.svg",
+      "viewBox": "0 0 420 420"
+    }
+  },
+  "outfits": {
+    "casual-blue": {
+      "name": "Casual azul",
+      "path": "outfits/casual-blue.svg",
+      "viewBox": "0 0 400 560"
+    },
+    "business-suit": {
+      "name": "Terno executivo",
+      "path": "outfits/business-suit.svg",
+      "viewBox": "0 0 400 560"
+    },
+    "purple-mentor": {
+      "name": "Blazer roxo",
+      "path": "outfits/purple-mentor.svg",
+      "viewBox": "0 0 400 560"
+    },
+    "yellow-hoodie": {
+      "name": "Moletom amarelo",
+      "path": "outfits/yellow-hoodie.svg",
+      "viewBox": "0 0 400 560"
+    },
+    "red-creator": {
+      "name": "Jaqueta vermelha",
+      "path": "outfits/red-creator.svg",
+      "viewBox": "0 0 400 560"
+    },
+    "orange-workwear": {
+      "name": "Colete de trabalho",
+      "path": "outfits/orange-workwear.svg",
+      "viewBox": "0 0 400 560"
+    }
+  },
+  "accessories": {
+    "glasses": {
+      "name": "Óculos",
+      "path": "accessories/glasses.svg",
+      "viewBox": "0 0 400 560"
+    },
+    "blue-cap": {
+      "name": "Boné azul",
+      "path": "accessories/blue-cap.svg",
+      "viewBox": "0 0 400 560"
+    },
+    "yellow-hardhat": {
+      "name": "Capacete amarelo",
+      "path": "accessories/yellow-hardhat.svg",
+      "viewBox": "0 0 400 560"
+    },
+    "headset": {
+      "name": "Headset",
+      "path": "accessories/headset.svg",
+      "viewBox": "0 0 400 560"
+    },
+    "tie-red": {
+      "name": "Gravata vermelha",
+      "path": "accessories/tie-red.svg",
+      "viewBox": "0 0 400 560"
+    }
+  },
+  "expressions": [
+    "neutral",
+    "happy",
+    "excited",
+    "surprised",
+    "pondering",
+    "worried",
+    "sad",
+    "angry",
+    "confident",
+    "idea"
+  ],
+  "movements": [
+    "idle",
+    "talking",
+    "typing",
+    "thinking",
+    "walking",
+    "running",
+    "pointing",
+    "celebrating",
+    "holding_phone",
+    "holding_money",
+    "writing"
+  ],
+  "camera": [
+    "static",
+    "slow_zoom_in",
+    "slow_zoom_out",
+    "pan_left",
+    "pan_right"
+  ]
 }

@@ -1,11 +1,9 @@
 # Herbert — Protagonista
 
-Protagonista recorrente: curioso, acessível e expressivo. Roupa casual cinza.
+Avatar original no estilo 2D Blocky Game Cartoon.
 
-- Asset principal: `character.svg`
-- `viewBox`: `0 0 600 720`
-- Expressões disponíveis no próprio SVG: neutral, happy, excited, surprised, pondering, worried, sad, doubtful, determined, laughing
-- O grupo de personagem tem o identificador `character-rig`.
-- As expressões são grupos independentes com `data-expression`; o motor ativa uma por vez.
-
-Mantenha o mesmo `viewBox`, IDs e proporções ao atualizar o desenho para preservar a compatibilidade com as animações.
+- ID: `herbert`
+- SVG: `character.svg`
+- ViewBox: `0 0 400 560`
+- Grupos articulados: `head`, `torso`, `arm-left`, `arm-right`, `leg-left`, `leg-right`
+- Expressões: neutral, happy, excited, surprised, pondering, worried, sad, angry, confident, idea

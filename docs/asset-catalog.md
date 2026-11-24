@@ -1,21 +1,17 @@
-# Catálogo de assets
+# Catálogo
 
-Consulte sempre `manifest.json`, que é a fonte de verdade dos IDs válidos.
+Use sempre `manifest.json` para conferir IDs válidos.
 
-## Personagens
-`herbert`, `mentor`, `investor`, `friend`, `specialist`. Cada um tem `characters/<id>/character.svg`.
+Personagens: `herbert`, `mentor`, `investor`, `friend`, `specialist`, `entrepreneur`, `tech-ai`, `reseller`.
 
-## Cenários
-`office`, `home-office`, `study-room`, `cafe`, `bank`, `supermarket`, `city`, `charts`.
+Cenários: `office`, `home-office`, `bank`, `supermarket`, `city`, `shop`, `studio`, `beach`, `cafe`, `charts`.
 
-## Objetos
-`laptop`, `smartphone`, `money-stack`, `coins`, `chart-up`, `briefcase`, `lightbulb`.
+Objetos: `laptop`, `smartphone`, `money-stack`, `coins`, `chart-up`, `briefcase`, `lightbulb`, `piggy-bank`, `banknote`, `calendar`, `target`, `shopping-cart`.
 
-## Expressões
-`neutral`, `happy`, `excited`, `surprised`, `pondering`, `worried`, `sad`, `doubtful`, `determined`, `laughing`.
+Roupas: `casual-blue`, `business-suit`, `purple-mentor`, `yellow-hoodie`, `red-creator`, `orange-workwear`.
 
-## Movimentos
-`idle`, `talking`, `typing`, `thinking`, `walking`, `pointing`, `celebrating`, `holding_phone`, `holding_money`, `writing`.
+Acessórios: `glasses`, `blue-cap`, `yellow-hardhat`, `headset`, `tie-red`.
 
-## Câmera
-`static`, `slow_zoom_in`, `slow_zoom_out`, `pan_left`, `pan_right`.
+Expressões: `neutral`, `happy`, `excited`, `surprised`, `pondering`, `worried`, `sad`, `angry`, `confident`, `idea`.
+
+Movimentos: `idle`, `talking`, `typing`, `thinking`, `walking`, `running`, `pointing`, `celebrating`, `holding_phone`, `holding_money`, `writing`.

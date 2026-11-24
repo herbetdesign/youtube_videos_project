@@ -1,3 +1,9 @@
-# Amigo
+# Amigo — Amigo iniciante
 
-Amigo iniciante, boné azul e moletom bege. Representa dúvidas comuns do público. SVG modular com 10 expressões.
+Avatar original no estilo 2D Blocky Game Cartoon.
+
+- ID: `friend`
+- SVG: `character.svg`
+- ViewBox: `0 0 400 560`
+- Grupos articulados: `head`, `torso`, `arm-left`, `arm-right`, `leg-left`, `leg-right`
+- Expressões: neutral, happy, excited, surprised, pondering, worried, sad, angry, confident, idea
